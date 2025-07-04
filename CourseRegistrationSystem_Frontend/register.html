@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <link rel="icon" href="Glyphs Silhouette Vector PNG, Student Glyph Black Icon, Student Icons, Black Icons, Student PNG Image For Free Download.jpeg">
+        <title>Register a course</title>
+        <style>
+            body {
+                background-image: url('111.png');
+                background-size: cover;            
+               background-repeat: no-repeat;     
+               background-position: center center;
+               height: 100vh;                     
+               margin: 0;
+                text-align: center; 
+            }
+
+            form {
+                margin:  auto;
+                padding: 20px;
+                width: 400px; 
+                background-color: #fff;
+            }
+
+            input, select, button {
+                width: 90%;
+                padding: 10px;
+                margin: 10px;
+            }
+
+            button {
+                background-color: #4CAF50;
+                color: white; 
+                font-weight: bold;
+                font-size: medium;
+                cursor: pointer; 
+            }
+
+            button:hover {
+                background-color: #104212; 
+            }
+        
+        </style>
+
+    </head>
+    <body><br>
+        <h1 style="color: rgb(0, 0, 0);">Kickstart with an exciting course</h1>
+
+        <form action="http://localhost:8080/courses/register" method="post">
+            <label for="name">Enter your name:</label><br>
+            <input type="text" name="name"><br><br>
+
+            <label for="email">Enter your emailId:</label><br>
+            <input type="email" name="emailId"><br><br>
+
+            <label for="course">Choose a Course</label><br>
+            <select id="course" name="courseName">
+                <option value="Java Essentials">Java Essentials</option>
+                <option value="Python for ML">Python for ML</option>
+                <option value="Spring Boot">Spring Boot</option>
+            </select>
+
+            <br><br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Available Courses</title>
+        <link rel="icon" href="Glyphs Silhouette Vector PNG, Student Glyph Black Icon, Student Icons, Black Icons, Student PNG Image For Free Download.jpeg">
+        <script type="text/javascript" src="myscript.js"></script>
+
+        <style>
+            td{
+                background-color: aliceblue;
+            }
+    
+            body{
+                background-image: url('112.png');
+               background-size: cover;            
+               background-repeat: no-repeat;     
+               background-position: center center;
+               height: 100vh;                     
+               margin: 0;
+                padding: 50px;
+            }
+        </style>
+    
+    </head>
+    <body>
+        <center><h1>All Available Courses</h1></center>
+        <table align="center" border="1" style="background-color: black;">
+            <tr align="center" style="background-color: lightblue;">
+                <th width="100">Course Id</th>
+                <th width="150">Course Name</th>
+                <th width="150">Trainer</th>
+                <th width="140">Duration in weeks</th>
+            </tr>
+
+            <tbody align="center" id="coursetable"></tbody> 
+        </table>
+
+
+        <script type="text/javascript">
+            window.onload = function(){
+                showCourses();
+            };
+        </script>
+    </body>
+</html>
